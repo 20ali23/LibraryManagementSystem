@@ -38,10 +38,6 @@ class Library:
         for i in self.liste_book:
             if self.user not in i:
                 self.file.write(i)
-                # self.index = self.liste_book.index(i)
-                # self.liste_book.remove(i)
-                # del self.liste_book[self.index]
-                # break
 
     def __del__(self):
         self.file.close()
